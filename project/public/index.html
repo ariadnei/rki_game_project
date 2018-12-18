@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Список вопросов</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link type='text/css' rel='stylesheet' href='style.css'/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type='text/javascript' charset="UTF-8" src='snow.js'></script>
+
+</head>
+<body>
+  <div>
+  <img class="lights" src="images/lights.png" width=100% alt="lights">
+  </div>
+  <div id='container'>
+    <div id='title'>
+  	   <h2>Тест для изучающих русский язык как иностранный</h2>
+    </div>
+    <div class="greeting">
+      <form id="greet">
+      <p>Привет, дорогой друг!</p>
+      <p>Предлагаем тебе пройти тест на определение уровня владения русским языком. В тесте будут вопросы 3-х разных категорий: орфография, морфология, синтаксис и словообразование. За каждые два правильных ответа твой уровень повышается. Если ты ответил неверно - твой уровень падает.</p>
+      <p>В конце теста ты узнаешь свой уровень по каждой категории и уровень владения языком в целом.</p>
+      <p>Ну что, не боишься? Тогда начнем!</p>
+      <p>Желаем удачи!</p>
+      <button type="submit" class="btn btn-sm btn-primary">Начать тест</button>
+      </form>
+    </div>
+    <form action="/var" id = "test">
+      <div class="test">
+      </div>
+      <!-- <button type="submit" class="btn btn-sm btn-primary" id='next'>Next</button> -->
+    </form>
+    <br>
+    <div class="res">
+      <div class="total">
+      </div>
+      <div class="resp">
+      </div>
+  	   <div class="finals">
+      </div>
+    </div>
+   </div>
+   <img class="medved" width="350" src="images/medved.png" alt="medved">
+   <canvas id="canvas"></canvas> <!-- snow effect -->
+
+</body>
+
+<script src="script.js"></script>
+<script type='text/javascript' charset="UTF-8" src='snow.js'></script>
+</html>
